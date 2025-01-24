@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A fully anonymized portfolio template with improved structure and accessibility."
+  />
+
+  <title>Generic Portfolio</title>
+
+  <!-- Favicon & Icons (Optional) -->
+  <link rel="icon" href="favicon.png" />
+
+  <!-- External CSS (Optional) -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fullpage.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/efp6vft.css" />
+
+  <!-- Example Font Awesome -->
+  <script src="https://kit.fontawesome.com/df47cda77e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ========== LOADING SCREEN ========== -->
+  <div class="loading" aria-hidden="true">
+    <figure class="loader">
+      <div class="anim">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      <p class="loading-text" aria-label="Loading...">HOME</p>
+    </figure>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="top-bar">
+      <!-- Accessible "skip" link (optional) -->
+      <a class="visually-hidden skip-link" href="#main-content"
+        >Skip to main content</a
+      >
+
+      <!-- ======= NAV / MENU ======= -->
+      <nav class="overlay" aria-label="Main Navigation">
+        <button class="menu-toggle" aria-label="Open navigation menu">
+          <!-- Menu Icon (SVG) -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 122 92"
+            role="img"
+            aria-hidden="true"
+          >
+            <g>
+              <g>
+                <line
+                  class="toggle-shadow"
+                  x1="59.81"
+                  y1="3.43"
+                  x2="59.81"
+                  y2="89.25"
+                />
+                <line
+                  class="toggle-shadow"
+                  x1="19.18"
+                  y1="45.64"
+                  x2="105.32"
+                  y2="45.64"
+                />
+              </g>
+              <g>
+                <line
+                  class="svg-stroke"
+                  x1="55.31"
+                  y1="0.75"
+                  x2="55.31"
+                  y2="86.57"
+                />
+                <line
+                  class="svg-stroke"
+                  x1="14.68"
+                  y1="42.97"
+                  x2="100.82"
+                  y2="42.97"
+                />
+              </g>
+            </g>
+          </svg>
+          <span class="menu-label">MENU</span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="overlay-content">
+          <ul>
+            <li><a class="linkhover" href="#home">Home</a></li>
+            <li><a class="linkhover" href="#projects">Projects</a></li>
+            <li><a class="linkhover" href="#about">About</a></li>
+            <li><a class="linkhover" href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- Example Social Icons -->
+          <div class="social-grid" aria-label="Social Links">
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <!-- Instagram Icon (Example) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="102"
+                height="98"
+                viewBox="0 0 102.46 98.36"
+                role="img"
+                aria-hidden="true"
+              >
+                <!-- Replace with your own SVG path(s) -->
+                <path
+                  d="M66.13,99.07H30.01A26.806,26.806,0,0,1,3.2,72.26V36.13A26.806,26.806,0,0,1,30.01,9.32H66.13A26.806,26.806,0,0,1,92.94,36.13V72.25A26.814,26.814,0,0,1,66.13,99.07Z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <!-- LinkedIn Icon (Example) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="99"
+                viewBox="0 0 100.85 99.79"
+                role="img"
+                aria-hidden="true"
+              >
+                <!-- Replace with your own SVG path(s) -->
+                <path
+                  d="M64.81,100.83H28.69A26.806,26.806,0,0,1,1.88,74.02V37.89A26.806,26.806,0,0,1,28.69,11.08H64.81A26.806,26.806,0,0,1,91.62,37.89V74.01A26.814,26.814,0,0,1,64.81,100.83Z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <p class="byline">© 2025 Placeholder Name</p>
+        </div>
+      </nav>
+
+      <!-- Light/Dark Mode Toggle (Optional) -->
+      <div class="moon">
+        <button class="dark-mode-toggle" aria-label="Toggle Dark/Light Mode">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44.864"
+            height="52.309"
+            viewBox="0 0 66.864 67.309"
+            role="img"
+            aria-hidden="true"
+          >
+            <!-- Example Moon Icon -->
+            <path d="M0 0h66.864v67.309H0z" fill="none" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Email / Contact Quick Link -->
+      <div class="mail">
+        <a href="mailto:placeholder@example.com" aria-label="Email me">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="58"
+            height="50"
+            viewBox="0 0 68.432 50.111"
+            role="img"
+            aria-hidden="true"
+          >
+            <!-- Example Mail Icon -->
+            <path d="M0 0h68.432v50.111H0z" fill="none" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content">
+    <div id="fullpage">
+      <!-- SECTION 1: HOME -->
+      <section
+        class="section"
+        data-anchor="home"
+        id="home"
+        aria-label="Home Section"
+      >
+        <div class="hero-content">
+          <div id="lineDrawing">
+            <!-- Example logos or placeholders -->
+            <svg
+              id="desktop-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="600"
+              height="150"
+              viewBox="0 0 600 150"
+              aria-hidden="true"
+            >
+              <text x="20" y="80" font-size="40" fill="#777"
+                >Generic Logo</text
+              >
+            </svg>
+            <svg
+              id="mobile-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="300"
+              height="100"
+              viewBox="0 0 300 100"
+              aria-hidden="true"
+            >
+              <text x="10" y="50" font-size="20" fill="#777"
+                >Mobile Logo</text
+              >
+            </svg>
+          </div>
+
+          <p class="tagline">Web Designer &amp; Developer</p>
+
+          <div class="indicator-wrapper" aria-hidden="true">
+            <div class="indicator-container">
+              <div class="indicator-arrow top">
+                <div class="base"></div>
+                <div class="arrowpoint"></div>
+              </div>
+              <div class="indicator-arrow bottom">
+                <div class="base"></div>
+                <div class="arrowpoint"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: PROJECTS -->
+      <section
+        class="section"
+        data-anchor="projects"
+        id="projects"
+        aria-label="Projects Section"
+      >
+        <div class="wrapper wrap-reg">
+          <div class="col1">
+            <h1>Projects</h1>
+            <div class="accent accent-left">
+              <div class="rect2 pink-bg"></div>
+              <div class="rect1"></div>
+            </div>
+            <div class="page-links">
+              <a href="projects.html" class="page-link"
+                >See All Projects <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="shell shadow reg">
+            <div class="shell-header">
+              <span class="header-dot green-bg"></span>
+              <span class="header-dot yellow-bg"></span>
+              <span class="header-dot pink-bg"></span>
+            </div>
+            <div
+              class="shell-body justify-center shell-padding shell-bg"
+              aria-label="Project Thumbnails"
+            >
+              <!-- Example project thumbnails -->
+              <div class="two-img">
+                <div class="img-container">
+                  <div class="img-overlay">
+                    <div class="overlay-text">
+                      <a href="projects.html#project1">Project One</a>
+                    </div>
+                  </div>
+                  <img
+                    class="img-thumbnail"
+                    src="placeholder1.jpg"
+                    alt="Screenshot of Project One"
+                  />
+                </div>
+                <div class="img-container">
+                  <div class="img-overlay">
+                    <div class="overlay-text">
+                      <a href="projects.html#project2">Project Two</a>
+                    </div>
+                  </div>
+                  <img
+                    class="img-thumbnail"
+                    src="placeholder2.jpg"
+                    alt="Screenshot of Project Two"
+                  />
+                </div>
+              </div>
+
+              <div class="one-img">
+                <div class="img-container">
+                  <div class="img-overlay">
+                    <div class="overlay-text">
+                      <a href="projects.html#project3">Project Three</a>
+                    </div>
+                  </div>
+                  <img
+                    class="img-thumbnail"
+                    src="placeholder3.jpg"
+                    alt="Screenshot of Project Three"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Example design element -->
+          <div class="fresh-container absolute" aria-hidden="true">
+            <svg
+              class="rotate"
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="120"
+              viewBox="0 0 305.328 296.43"
+            >
+              <path
+                d="M154.236,72.246,205,7.88l-3.056,81.486,80.836-17.12-55.458,60.48,73.087,38.134-81.9,11.173,31.137,75.539-70.023-43.352-25.386,77.6-25.378-77.6L58.834,257.573l31.137-75.539L8.07,170.861l73.079-38.134L25.7,72.246l80.836,17.12L103.472,7.88Z"
+                transform="translate(-1.576 -1.824)"
+                stroke-miterlimit="10"
+                stroke-width="3"
+              ></path>
+            </svg>
+            <span class="fresh">FRESH!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: ABOUT -->
+      <section
+        class="section"
+        data-anchor="about"
+        id="about"
+        aria-label="About Section"
+      >
+        <div class="wrapper wrap-reg">
+          <div class="shell rev-shadow reg">
+            <div class="shell-header">
+              <span class="header-dot green-bg"></span>
+              <span class="header-dot yellow-bg"></span>
+              <span class="header-dot pink-bg"></span>
+            </div>
+            <div class="shell-body shell-padding justify-center about-bg">
+              <!-- Example About text or illustration -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                bibendum, neque et venenatis sagittis, nisl nunc cursus nibh,
+                eget porta massa nunc nec ipsum.
+              </p>
+            </div>
+          </div>
+          <div class="col1">
+            <h1>About Me</h1>
+            <div class="accent accent-right">
+              <div class="rect2 purple-bg"></div>
+              <div class="rect1"></div>
+            </div>
+            <div class="page-links block">
+              <a href="about.html" class="page-link"
+                ><i class="fas fa-arrow-left"></i> Get to know me</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Example parallax elements (optional) -->
+        <div
+          class="parallax"
+          data-parallax-axis="both"
+          data-parallax-scope="global"
+          data-parallax-detect="mouseover"
+          aria-hidden="true"
+        >
+          <div class="parallax__item" data-parallax-depth="22">
+            <div class="triangle_shadow">
+              <svg
+                class="purple"
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 159.779 151.056"
+                role="img"
+              >
+                <path
+                  d="M64.454,5.92,6.54,156.976l159.779-25.386Z"
+                  transform="translate(-6.54 -5.92)"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="parallax__item" data-parallax-depth="36">
+            <div class="triangle">
+              <svg
+                class="green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 132.305 125.093"
+                role="img"
+              >
+                <path
+                  class="svg-stroke"
+                  d="M53.979,6.74,7.89,126.981l127.173-20.206Z"
+                  transform="translate(-5.559 -3.777)"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONTACT -->
+      <section
+        class="section"
+        data-anchor="contact"
+        id="contact"
+        aria-label="Contact Section"
+      >
+        <div class="wrapper wrap-reg">
+          <div class="col1">
+            <h1>Contact</h1>
+            <div class="accent accent-left">
+              <div class="rect2 blue-bg"></div>
+              <div class="rect1"></div>
+            </div>
+            <div class="page-links">
+              <a href="#" target="_blank" rel="noopener" class="page-link"
+                >LinkedIn <i class="fas fa-arrow-right"></i></a
+              >
+              <a href="#" target="_blank" rel="noopener" class="page-link"
+                >Instagram <i class="fas fa-arrow-right"></i></a
+              >
+              <a href="#" target="_blank" rel="noopener" class="page-link"
+                >My Resume <i class="fas fa-arrow-right"></i></a
+              >
+            </div>
+          </div>
+
+          <div class="shell shadow reg">
+            <div class="shell-header">
+              <span class="header-dot green-bg"></span>
+              <span class="header-dot yellow-bg"></span>
+              <span class="header-dot pink-bg"></span>
+            </div>
+            <div class="shell-body shell-padding justify-center shell-bg">
+              <!-- CONTACT FORM -->
+              <form
+                id="contact-form"
+                method="POST"
+                name="contact"
+                action="#"
+                aria-label="Contact Form"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="contact_number" />
+
+                <div class="formgroup" id="name-form">
+                  <label for="name"
+                    >Your name <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="formgroup" id="email-form">
+                  <label for="email"
+                    >Your e-mail <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="formgroup" id="message-form">
+                  <label for="message">Your message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    placeholder="Write something..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="grid-bg" aria-hidden="true"></div>
+  </main>
+
+  <!-- ========== FOOTER (OPTIONAL) ========== -->
+  <footer>
+    <p>&copy; 2025 Placeholder Name - All Rights Reserved.</p>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/simpleParallax.min.js"></script>
+  <script src="js/fullpage.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    // Fullpage Initialization
+    new fullpage('#fullpage', {
+      // Provide your own license key or remove the line if testing
+      licenseKey: 'YOUR-FULLPAGE-LICENSE-KEY',
+      autoScrolling: true,
+      navigation: true,
+      navigationTooltips: ['Home', 'Projects', 'About', 'Contact'],
+      navigationPosition: 'left',
+      showActiveTooltip: false,
+    });
+
+    // Example Anime.js (line drawing)
+    var lineDrawing = anime({
+      targets: '#lineDrawing .lines path',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 3000,
+      direction: 'alternate',
+      loop: false
+    });
+  </script>
+</body>
+</html>
